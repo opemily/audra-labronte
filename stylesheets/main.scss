@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+@import 'fonts';
+
+$default-teal: rgb(0,166,151);
+$background-image: url(../imgs/zenbg.png);
+
+/* ////////// Global ////////// */
+
+* {
+	font-family: $body-font-family;
+	color: white;
+	text-align: justify;
+}
+
+body {
+	background: $background-image;
+}
+
+#header h1 {
+	font: $header-font;
+	color: $default-teal;
+	text-align: center;
+}
+
+h2 {
+	//font: bold 1.5em 'Rock Salt', cursive, serif; 
+	color: $default-teal;
+	text-align: center;
+}
+
+.w2 {
+	display: inline-block;
+}
+
+.w3{
+	@extend .w2;
+}
+
+/* ////////// Form ////////// */
+#contact form {
+	display: block;
+	margin: 0% 15%;
+}
+
+label {
+	font: bold 1.2em;
+	font-family: $body-font-family;
+	color: white;
+	text-shadow: 0 2px 3px #000;
+	text-align: justify;
+}
+
+input, textarea {
+  display: block;
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 5px #ccc;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  width: 100px;
+  background: $default-teal;
+  color: white;
+  border-radius: 25px;
+  border: 0;
+}
+
+input.error, textarea.error {
+  border: 1px solid red;
+}
+
+span.error {
+  display: none;
+  color: red;
+}
