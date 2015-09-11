@@ -53,7 +53,7 @@ h2 {
  	
 }
 
-#social li:hover, #social li:active {
+#social li:hover, #social li:focus {
   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
 }
@@ -92,7 +92,7 @@ h2 {
 	width: 100%;	
 }
 
-.content:hover {
+.content:hover, .content:focus {
   border-color: $default-teal;
 }
 
@@ -100,7 +100,6 @@ h2 {
 .item.h2 { height: 200px; }
 .item.h3 { height: 300px; }
 .item.w3 { width:  300px; }
-.item.w6 { width:  600px; }
 
 .item.gigante {
   width: 800px;
@@ -131,3 +130,47 @@ h2 {
 
 
 /* //////////// Responsiveness ////////// */
+
+@media screen and (max-width: 875px){
+	header h1 {
+		margin: 0 50px;
+	}
+
+	#social ul {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 750px){
+	#social {
+		float: none;
+		width: 100%;
+	}
+
+	#social li {
+
+		margin: 20px 5%;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	header h1 {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#social li {
+		margin: 10px 10px;
+	}
+
+	#services, #gallery {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	#social li {
+		margin: 10px 5px;
+	}
+}
