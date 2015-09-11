@@ -36,7 +36,7 @@ h2 {
   transition: transform 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 0.5s ease-in-out; }
 
-#social li:hover, #social li:focus {
+#social li:hover, #social li:active {
   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg); }
 
@@ -67,7 +67,7 @@ h2 {
   height: 100%;
   width: 100%; }
 
-.content:hover, .content:focus {
+.content:hover, .content:active {
   border-color: #00a697; }
 
 .item.w2 {
@@ -103,15 +103,33 @@ h2 {
   border-color: rgba(0, 0, 0, 0.3); }
 
 .instagram iframe {
-  margin: 0 auto; }
+  display: block;
+  width: 600px;
+  height: 600px;
+  border: none;
+  margin: 0 auto;
+  overflow: hidden; }
 
 /* //////////// Responsiveness ////////// */
-@media screen and (max-width: 875px) {
-  header h1 {
-    margin: 0 50px; }
-
+@media screen and (max-width: 925px) {
   #social ul {
     padding: 0; } }
+@media screen and (max-width: 875px) {
+  header h1 {
+    margin: 0 50px; } }
+@media screen and (max-width: 850px) {
+  .item.gigante {
+    width: 600px; }
+
+  .text {
+    width: 400px; }
+
+  .text iframe {
+    width: 400px;
+    height: 400px; } }
+@media screen and (max-width: 790px) {
+  header h1 {
+    margin: 0 25px; } }
 @media screen and (max-width: 750px) {
   #social {
     float: none;
@@ -119,16 +137,38 @@ h2 {
 
   #social li {
     margin: 20px 5%; } }
+@media screen and (max-width: 650px) {
+  .item.gigante {
+    width: 400px; }
+
+  .text {
+    width: 300px; } }
 @media screen and (max-width: 475px) {
   header h1 {
     font-size: 2em; } }
+@media screen and (max-width: 425px) {
+  .item.gigante {
+    width: 300px; }
+
+  .text {
+    width: 200px; }
+
+  .text img {
+    width: 150px;
+    height: 150px; } }
 @media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 1.7em; }
+
   #social li {
     margin: 10px 10px; }
 
   #services, #gallery {
     width: 300px; } }
 @media screen and (max-width: 340px) {
+  header h1 {
+    font-size: 1.5em; }
+
   #social li {
     margin: 10px 5px; } }
 
