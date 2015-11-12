@@ -45,6 +45,18 @@ h2 {
   width: 50px;
   margin: 0 20px; }
 
+/* ////////// Instagram Library //////////*/
+.instagram div {
+  width: 250px;
+  height: 250px;
+  border: 4px solid #333;
+  border-color: rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  float: left; }
+
+.instagram div:hover, .instagram div:active {
+  border-color: #00a697; }
+
 /* ////////// Packery ////////// */
 .packery {
   max-width: 720px; }
@@ -101,14 +113,6 @@ h2 {
   margin: 0 auto;
   border: 4px solid #333;
   border-color: rgba(0, 0, 0, 0.3); }
-
-.instagram iframe {
-  display: block;
-  width: 600px;
-  height: 600px;
-  border: none;
-  margin: 0 auto;
-  overflow: hidden; }
 
 /* //////////// Responsiveness ////////// */
 @media screen and (max-width: 925px) {

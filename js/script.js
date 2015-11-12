@@ -1,7 +1,9 @@
 $(function() {
 
+// Packery
 var $container = $('#packery');
 var pckry = $container.data('packery');
+
 // initialize
 $container.packery({
   itemSelector: '.item',
@@ -10,8 +12,8 @@ $container.packery({
   "rowHeight": 5
 });
 
+// Open and close boxes
 $( function() {
-  
   $container.on( 'click', '.content', function( event ) {
     // change size of item via class
     $( event.target).closest('.content').toggleClass('gigante');
@@ -26,7 +28,10 @@ $( function() {
   
 });
 
-
-
-
+$('.instagram').instagram({
+ userId: '249670965',
+ clientId: 'ec0e730ff87c42ffa6d751118a677f1a',
+ image_size:'standard_resolution'
 });
+
+}); //jquery 
